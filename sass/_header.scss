@@ -1,8 +1,41 @@
 header {
     .topbar {
+        padding-left: 0.6%;
         background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
         box-shadow: 0 1px 0 0 #110038;
+        color: white;
     }
-    
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 39px 9.8% 38px 6.9%;
+        a{
+            height: 64px;
+            width: auto;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            width: 40%;
+            
+
+            li {
+                margin: 1.1%;
+
+                a {
+                    background: #F7C9F3;
+                    border: 1px solid #110038;
+                    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+                    padding:9px 26.5px;
+                    width: 10%;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
 
 }
