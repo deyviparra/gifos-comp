@@ -11,27 +11,91 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 39px 9.8% 38px 6.9%;
-        a{
+
+        a {
             height: 64px;
             width: auto;
         }
+
         .menu {
             display: flex;
             justify-content: space-around;
             list-style: none;
+            align-items: center;
             width: 40%;
-            
 
+            
             li {
                 margin: 1.1%;
+                position: relative;
 
-                a {
+                .nav-button {
                     background: #F7C9F3;
                     border: 1px solid #110038;
                     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-                    padding:9px 26.5px;
+                    padding: 9px 26.5px;
                     width: 10%;
                     text-decoration: none;
+
+                }
+
+                
+
+                .theme-menu {
+                    position: absolute;
+                    top: 28px;
+                    width: 100%;
+                    height: 102px;
+                    display: none;
+
+                    justify-content: space-around;
+                    flex-direction: column;
+                    background: #E6E6E6;
+
+                    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+
+                    button {
+                        height: 36px;
+                        margin: 10px;
+                        background: #FFF4FD;
+                        border: 1px solid #CCA6C9;
+                        box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+                    }
+                }
+
+                .nav-button:hover {
+                    border: 1px solid #110038 !important;
+                }
+
+                .my-gifs {
+                    box-sizing: content-box;
+
+                    &:hover {
+
+                        border: 1px solid #110038;
+                    }
+
+                    .underline-m {
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+            .flex {
+                display: flex;
+                .nav-button{
+                    width: 60%;
+                }
+                .dropdown {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 36px;
+                    height: 36px;
+                    background: #F7C9F3;
+                    border: 1px solid #110038;
+                    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+
                 }
             }
         }

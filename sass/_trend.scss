@@ -1,0 +1,17 @@
+.trends {
+    padding: 0 9.7% 0 7.2%;
+
+    .trend-gifs-container {
+        display: flex;
+
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        img {
+            width: 23%;
+            height: 298px;
+            margin: 16px 0.55%;
+
+        }
+    }
+}

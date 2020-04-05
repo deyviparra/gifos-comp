@@ -6,6 +6,21 @@
 body {
   background: #FFF4FD; }
 
+a {
+  text-decoration: none; }
+
+.sub-title {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  padding: 6px; }
+
+.inline {
+  display: inline; }
+
+button {
+  cursor: pointer; }
+
 header .topbar {
   padding-left: 0.6%;
   background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
@@ -23,16 +38,55 @@ header nav {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    align-items: center;
     width: 40%; }
     header nav .menu li {
-      margin: 1.1%; }
-      header nav .menu li a {
+      margin: 1.1%;
+      position: relative; }
+      header nav .menu li .nav-button {
         background: #F7C9F3;
         border: 1px solid #110038;
         box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
         padding: 9px 26.5px;
         width: 10%;
         text-decoration: none; }
+      header nav .menu li .theme-menu {
+        position: absolute;
+        top: 28px;
+        width: 100%;
+        height: 102px;
+        display: none;
+        justify-content: space-around;
+        flex-direction: column;
+        background: #E6E6E6;
+        box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF; }
+        header nav .menu li .theme-menu button {
+          height: 36px;
+          margin: 10px;
+          background: #FFF4FD;
+          border: 1px solid #CCA6C9;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF; }
+      header nav .menu li .nav-button:hover {
+        border: 1px solid #110038 !important; }
+      header nav .menu li .my-gifs {
+        box-sizing: content-box; }
+        header nav .menu li .my-gifs:hover {
+          border: 1px solid #110038; }
+        header nav .menu li .my-gifs .underline-m {
+          text-decoration: underline; }
+    header nav .menu .flex {
+      display: flex; }
+      header nav .menu .flex .nav-button {
+        width: 60%; }
+      header nav .menu .flex .dropdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        background: #F7C9F3;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF; }
 
 .search-container {
   margin: 0 9.7% 64px 6.9%;
@@ -63,8 +117,57 @@ header nav {
 
 .suggest {
   margin: 0 9.7% 64px 6.9%; }
-  .suggest .sub-title {
-    background: #FFFAFE;
-    border: 1px solid #E6BBE2;
-    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
-    padding: 6px; }
+  .suggest .suggest-container {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between; }
+    .suggest .suggest-container .suggest-container-gifbox {
+      display: flex;
+      flex-direction: column;
+      width: 23%;
+      background: #E6E6E6;
+      box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+      box-sizing: border-box;
+      padding: 1px; }
+      .suggest .suggest-container .suggest-container-gifbox .suggest-title {
+        margin: 2px;
+        background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+        color: white;
+        padding-left: 5px;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .suggest .suggest-container .suggest-container-gifbox .suggest-title img {
+          margin: 2px; }
+      .suggest .suggest-container .suggest-container-gifbox .suggest-gifbox {
+        position: relative;
+        display: flex;
+        justify-content: center; }
+        .suggest .suggest-container .suggest-container-gifbox .suggest-gifbox a {
+          text-decoration: none;
+          color: white;
+          position: absolute;
+          bottom: 15px;
+          left: 7px;
+          padding: 10px;
+          background: #4180F6;
+          border: 1px solid #4C2F99;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF; }
+        .suggest .suggest-container .suggest-container-gifbox .suggest-gifbox img {
+          width: 100%;
+          height: 280px;
+          margin: 2px; }
+    .suggest .suggest-container div .suggest-tag {
+      display: inline; }
+
+.trends {
+  padding: 0 9.7% 0 7.2%; }
+  .trends .trend-gifs-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .trends .trend-gifs-container img {
+      width: 23%;
+      height: 298px;
+      margin: 16px 0.55%; }
