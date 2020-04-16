@@ -1,0 +1,55 @@
+.night {
+  background: #110038; }
+  .night .sub-title {
+    background: #FFFAFE;
+    border: 1px solid #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+    padding: 6px; }
+
+.night header .topbar {
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+  box-shadow: 0 1px 0 0 #110038; }
+.night header a {
+  color: white; }
+.night header nav .menu li .nav-button {
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  color: white; }
+.night header nav .menu li .dropdown {
+  color: white;
+  background: #EE3EFE;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF; }
+.night header nav .menu .theme-menu {
+  background: #B4B4B4;
+  box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF; }
+  .night header nav .menu .theme-menu .button-day-bg {
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF; }
+  .night header nav .menu .theme-menu .button-night-bg {
+    color: white;
+    background: #2E32FB;
+    border: 1px solid rgba(51, 53, 143, 0.2);
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF; }
+
+.night .search-container {
+  background: #B4B4B4;
+  box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF; }
+  .night .search-container p {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
+  .night .search-container button {
+    background: #B4B4B4;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF; }
+
+.night .suggest-container .suggest-container-gifbox {
+  background: #B4B4B4;
+  box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF; }
+  .night .suggest-container .suggest-container-gifbox .suggest-title {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%); }
+  .night .suggest-container .suggest-container-gifbox .suggest-gifbox a {
+    background: #2E32FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF; }

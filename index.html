@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles-night.css">
     <title>GifOS</title>
 </head>
 
-<body>
+<body class="day">
     <header>
         <div class="topbar">
             <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
         </div>
         <nav>
-            <a href="/"><img src="./assets/gifOF_logo.png" alt="Logo GifOS"></a>
+            <a href="/"><img src="./assets/gifOF_logo.png" id="logo" alt="Logo GifOS"></a>
             <ul class="menu">
-                <li><a class="nav-button" href="#">Crear Guifos</a></li>
-                <li class="flex">
-                    <p class="nav-button inline">Elegir tema </p>
-                    <div id="dropdown" class="dropdown inline">
-                        <img src="/assets/dropdown.svg" alt="dropdown">
-                    </div>
-
+                <li><a class="nav-button" href="">Crear Guifos</a></li>
+                <li class="theme-select">
+                    <button onclick="toggle()" class="dropdown">
+                        Elegir tema
+                        <img class="img-dropdown" src="/assets/dropdown.svg" alt="dropdown">
+                    </button>
                     <div class="theme-menu">
-                        <button class="select-theme" onclick="themeDay()">Sailor Day</button>
-                        <button class="select-theme" onclick="themeNight()">Sailor Night</button>
-
+                        <button class="select-theme button-day-bg" onclick="themeDay()">Sailor Day</button>
+                        <button class="select-theme button-night-bg" onclick="themeNight()">Sailor Night</button>
                     </div>
                 </li>
                 <li><a class="my-gifs" href="/"><span class="underline-m">M</span>is Guifos</a></li>
@@ -35,10 +34,17 @@
     </header>
     <div class="search-container">
         <p>Buscar</p>
-        <form action="">
-            <input type="text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
-            <button><img src="/assets/lupa.svg" alt=""> Buscar</button>
-        </form>
+
+        <div class="search">
+            <input type="text" id="input-search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" autocomplete='off'>
+            <button class="button-search" id="button-search"><img src="/assets/lupa.svg" alt=""> Buscar</button>
+        </div>
+
+        <div class="search-suggest-container">
+            <button class="suggest1"></button>
+            <button class="suggest2"></button>
+            <button class="suggest3"></button>
+        </div>
     </div>
     <section id="suggest" class="suggest">
         <p class="sub-title">Hoy te sugerimos:</p>
@@ -47,7 +53,7 @@
                 <div class="suggest-title">
                     <div>
                         <span>#</span>
-                        <p class="suggest-tag">shutup</p>
+                        <p class="suggest-tag">doit</p>
                     </div>
                     <img src="/assets/close.svg" alt="Close button">
                 </div>
@@ -62,7 +68,6 @@
                         <p class="suggest-tag">cant</p>
                     </div>
                     <img src="/assets/close.svg" alt="Close button">
-
                 </div>
                 <div class="suggest-gifbox"><a href="">Ver más...</a>
                 </div>
@@ -74,7 +79,6 @@
                         <p class="suggest-tag">travolta</p>
                     </div>
                     <img src="/assets/close.svg" alt="Close button">
-
                 </div>
                 <div class="suggest-gifbox"><a href="">Ver más...</a></div>
             </div>
@@ -82,11 +86,10 @@
                 <div class="suggest-title">
                     <div>
                         <span>#</span>
-                        <p class="suggest-tag">hackerman
+                        <p class="suggest-tag">james
                         </p>
                     </div>
                     <img src="/assets/close.svg" alt="Close button">
-
                 </div>
                 <div class="suggest-gifbox"><a href="">Ver más...</a></div>
             </div>
@@ -95,10 +98,12 @@
     <section id="trends" class="trends">
         <p class="sub-title">Tendencias:</p>
         <div class="trend-gifs-container" id="trends-container">
-
         </div>
     </section>
-    <script src="index.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/suggest.js"></script>
+    <script src="./js/trending.js"></script>
 </body>
 
 </html>

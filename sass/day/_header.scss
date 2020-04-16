@@ -24,7 +24,6 @@ header {
             align-items: center;
             width: 40%;
 
-            
             li {
                 margin: 1.1%;
                 position: relative;
@@ -34,33 +33,45 @@ header {
                     border: 1px solid #110038;
                     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
                     padding: 9px 26.5px;
-                    width: 10%;
+                    width: 25%;
                     text-decoration: none;
 
                 }
 
-                
-
                 .theme-menu {
                     position: absolute;
-                    top: 28px;
+                    top: 38px;
                     width: 100%;
                     height: 102px;
+                    padding-top: 5px;
                     display: none;
-
                     justify-content: space-around;
                     flex-direction: column;
                     background: #E6E6E6;
-
                     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 
                     button {
                         height: 36px;
-                        margin: 10px;
+                        width: 85%;
+                        margin: 5px 10px;
+                        padding: 7px 16px 7px 16px;
                         background: #FFF4FD;
                         border: 1px solid #CCA6C9;
                         box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
                     }
+
+                    .button-day-bg {
+                        background: #FFF4FD;
+                        border: 1px solid #CCA6C9;
+                        box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+                    }
+
+                    .button-night-bg {
+                        background: #F0F0F0;
+                        border: 1px solid #808080;
+                        box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                    }
+
                 }
 
                 .nav-button:hover {
@@ -81,21 +92,31 @@ header {
                 }
 
             }
-            .flex {
+
+            .theme-select {
                 display: flex;
-                .nav-button{
-                    width: 60%;
-                }
+                width: 27%;
+
                 .dropdown {
+                    padding-left: 10px;
+                    
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-around;
                     align-items: center;
-                    width: 36px;
+                    width: 100%;
                     height: 36px;
                     background: #F7C9F3;
                     border: 1px solid #110038;
                     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
 
+                    &:focus {
+                        outline: none;
+                    }
+
+                    img {
+                        padding: 14px 6px 14px 10px;
+                        border-left: 1px solid black;
+                    }
                 }
             }
         }
